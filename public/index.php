@@ -8,7 +8,7 @@
     $url = explode("/", $url);
 
     $page_name = trim($url[0]);
-    echo $url;
+    print_r($url);
    
     $filename = "../app/pages/".$page_name.".php"; //we get the first part ofthe url for example /public/admin
         //admin is url[0], then we locate it in the pages and add .php to the end 
