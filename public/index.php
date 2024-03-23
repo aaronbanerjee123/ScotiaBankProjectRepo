@@ -7,10 +7,8 @@
     $url = strtolower($url);
     $url = explode("/", $url);
 
-    if($url !== 'home'){
+    if($url != 'home'){
         $page_name = trim($url[1]);
-    }else{
-        $page_name = trim($url[0]);
     }
     echo $page_name;
    
