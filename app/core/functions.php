@@ -76,7 +76,7 @@ function redirect_admin_posts(){
 }
 
 function redirect_admin_myblogs(){
-    header('Location: https://cosc360.ok.ubc.ca/public/myblogs');
+    header('Location: https://cosc360.ok.ubc.ca/public/myblogss');
     die;
 }
 
