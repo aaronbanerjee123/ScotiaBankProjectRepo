@@ -43,53 +43,45 @@ function esc($str) {
 // }
 
 function redirect_login(){
-    header('Location: http://localhost/blog/public/login/');
-
-
+    header('Location: https://cosc360.ok.ubc.ca/public/login/');
     die;
 }
 
 
 function redirect_home(){
-    header('Location: http://localhost/blog/public/index.php');
-
-
+    header('Location: https://cosc360.ok.ubc.ca/public/index.php');
     die;
 }
 
 
 function redirect_admin(){
-    header('Location: http://localhost/blog/public/admin/');
+    header('Location: https://cosc360.ok.ubc.ca/public/admin/');
     die;
 }
 
 function redirect_admin_users(){
-    header('Location: http://localhost/blog/public/admin/users');
+    header('Location: https://cosc360.ok.ubc.ca/public/admin/users');
     die;
 }
 
 
-
-
 function redirect_admin_categories(){
-    header('Location: http://localhost/blog/public/admin/categories');
+    header('Location: https://cosc360.ok.ubc.ca/public/admin/categories');
     die;
 }
 
 function redirect_admin_posts(){
-    header('Location: http://localhost/blog/public/admin/posts');
+    header('Location: https://cosc360.ok.ubc.ca/public/admin/posts');
     die;
 }
 
 function redirect_admin_myblogs(){
-    header('Location: http://localhost/blog/public/myblogs');
+    header('Location: https://cosc360.ok.ubc.ca/public/myblogs');
     die;
 }
 
-
-
 function redirect_settings(){
-    header('Location: http://localhost/blog/public/settings');
+    header('Location: https://cosc360.ok.ubc.ca/public/settings');
     die;
 }
 
