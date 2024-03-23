@@ -196,7 +196,7 @@ function get_pagination_vars(){
 
 
 
-create_tables();
+// create_tables();
 function create_tables(){
     try {
     $string = "mysql:hostname=".DBHOST.";";
