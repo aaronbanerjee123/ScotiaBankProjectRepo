@@ -7,8 +7,11 @@
     $url = strtolower($url);
     $url = explode("/", $url);
 
-
-    $page_name = trim($url[0]);
+    if($url !== 'home'){
+        $page_name = trim($url[1]);
+    }else{
+        $page_name = trim($url[0]);
+    }
     echo $page_name;
    
     $filename = "../app/pages/".$page_name.".php"; //we get the first part ofthe url for example /public/admin
