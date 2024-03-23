@@ -35,13 +35,6 @@ function esc($str) {
     return htmlspecialchars($str ?? '');
 }
 
-
-
-// function redirect($page){
-//     header('Location: '.$page);
-//     die;
-// }
-
 function redirect_login(){
     header('Location: https://cosc360.ok.ubc.ca/aaron202/public/login/');
     die;
@@ -52,7 +45,6 @@ function redirect_home(){
     header('Location: https://cosc360.ok.ubc.ca/aaron202/public/home');
     die;
 }
-
 
 function redirect_admin(){
     header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/');
