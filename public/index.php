@@ -1,6 +1,6 @@
 
 <?php 
-    error_reporting(0);
+    // error_reporting(0);
     session_start();
     require "../app/core/init.php";
     $url = $_GET['url'] ?? 'home';
@@ -8,7 +8,7 @@
     $url = explode("/", $url);
 
 
-    $page_name = trim($url[1]);
+    $page_name = trim($url[0]);
     echo $page_name;
    
     $filename = "../app/pages/".$page_name.".php"; //we get the first part ofthe url for example /public/admin
