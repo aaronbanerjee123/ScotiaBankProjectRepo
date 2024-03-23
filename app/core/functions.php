@@ -43,45 +43,45 @@ function esc($str) {
 // }
 
 function redirect_login(){
-    header('Location: https://cosc360.ok.ubc.ca/public/login/');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/login/');
     die;
 }
 
 
 function redirect_home(){
-    header('Location: https://cosc360.ok.ubc.ca/public/index.php');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/home');
     die;
 }
 
 
 function redirect_admin(){
-    header('Location: https://cosc360.ok.ubc.ca/public/admin/');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/');
     die;
 }
 
 function redirect_admin_users(){
-    header('Location: https://cosc360.ok.ubc.ca/public/admin/users');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/users');
     die;
 }
 
 
 function redirect_admin_categories(){
-    header('Location: https://cosc360.ok.ubc.ca/public/admin/categories');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/categories');
     die;
 }
 
 function redirect_admin_posts(){
-    header('Location: https://cosc360.ok.ubc.ca/public/admin/posts');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/posts');
     die;
 }
 
 function redirect_admin_myblogs(){
-    header('Location: https://cosc360.ok.ubc.ca/public/myblogss');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/myblogs');
     die;
 }
 
 function redirect_settings(){
-    header('Location: https://cosc360.ok.ubc.ca/public/settings');
+    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/settings');
     die;
 }
 
@@ -348,6 +348,3 @@ function create_tables(){
     }
 
  }
-
- 
-    
