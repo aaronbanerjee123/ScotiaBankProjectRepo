@@ -7,11 +7,11 @@
     $url = strtolower($url);
     $url = explode("/", $url);
 
-    try{
-        print_r($url);
-    }catch(Exception $e){
-        echo $e->getMessage();
-    }
+    // try{
+    //     print_r($url);
+    // }catch(Exception $e){
+    //     echo $e->getMessage();
+    // }
 
     $page_name = trim($url[0]);
     // print_r($url);

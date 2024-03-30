@@ -160,12 +160,6 @@
         </form>
     </div>
 
-    <script>
-        $(document).ready(function() {
-            $('button[data-role=update]').on('click', function() {
-                alert('hello');
-            });
-        });
-    </script>
+ 
 </body>
 </html>

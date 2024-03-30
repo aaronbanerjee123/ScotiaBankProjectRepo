@@ -35,45 +35,53 @@ function esc($str) {
     return htmlspecialchars($str ?? '');
 }
 
+
+
+// function redirect($page){
+//     header('Location: '.$page);
+//     die;
+// }
+
 function redirect_login(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/login/');
+    header('Location: https://localhost/blog/public/login');
     die;
 }
 
 
 function redirect_home(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/home');
+    header('Location: https://localhost/blog/public/index.php');
     die;
 }
 
+
 function redirect_admin(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/');
+    header('Location: https://localhost/blog/public/admin');
     die;
 }
 
 function redirect_admin_users(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/users');
+    header('Location: https://localhost/blog/public/admin/users');
     die;
 }
 
 
 function redirect_admin_categories(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/categories');
+    header('Location: https://localhost/blog/public/admin/categories');
     die;
 }
 
 function redirect_admin_posts(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/admin/posts');
+    header('Location: https://localhost/blog/public/admin/posts');
     die;
 }
 
 function redirect_admin_myblogs(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/myblogs');
+    header('Location: https://localhost/blog/public/myblogs');
     die;
 }
 
 function redirect_settings(){
-    header('Location: https://cosc360.ok.ubc.ca/aaron202/public/settings');
+    header('Location: https://localhost/blog/public/settings');
     die;
 }
 
@@ -196,7 +204,7 @@ function get_pagination_vars(){
 
 
 
-// create_tables();
+create_tables();
 function create_tables(){
     try {
     $string = "mysql:hostname=".DBHOST.";";
@@ -240,6 +248,22 @@ function create_tables(){
     )";
     $stm = $con->prepare($query); 
     $stm->execute();
+
+    $query = "TRUNCATE TABLE categories";
+    $stm = $con->prepare($query);
+    $stm->execute();
+
+    $query = "INSERT INTO categories (category, slug) VALUES 
+          ('fitness', 'fitness'), 
+          ('music', 'music'), 
+          ('lifestyle', 'lifestyle'), 
+          ('travel', 'travel'), 
+          ('health', 'health')";
+
+        $stm = $con->prepare($query);
+        $stm->execute();
+
+
 
     $query = "create table if not exists posts(
         id int primary key auto_increment,
@@ -340,3 +364,6 @@ function create_tables(){
     }
 
  }
+
+ 
+    
